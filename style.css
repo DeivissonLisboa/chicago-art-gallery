@@ -8,30 +8,28 @@ body {
   margin: 0;
   padding: 0;
   background-color: #faf4f0;
-  overflow-y: hidden;
+  overflow: hidden;
   text-transform: uppercase;
 }
 
 .top-nav {
+  background-color: transparent;
   position: absolute;
   width: 100vw;
   height: 5rem;
-  background-color: transparent;
-}
-
-.top-nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
   margin: 0;
   padding: 0 2rem;
   list-style: none;
   font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
 }
 
-.top-nav ul a {
+.top-nav a {
   text-decoration: none;
   color: #000;
   cursor: pointer;
@@ -72,10 +70,14 @@ body {
   color: #fe0000;
 }
 
+.active,
+.highlight {
+  color: #fff;
+}
+
 .card.active {
   background-size: cover;
   background-position: bottom center;
-  color: #fff;
 }
 
 .card.active .number {
