@@ -50,6 +50,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-image: url("https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+  background-position: -100%;
+  background-repeat: no-repeat;
   user-select: none;
 }
 
@@ -70,7 +73,6 @@ body {
 }
 
 .card.active {
-  background-image: url("https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
   background-size: cover;
   background-position: bottom center;
   color: #fff;
