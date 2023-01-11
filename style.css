@@ -82,9 +82,34 @@ body {
 .card.active {
   background-size: cover;
   background-position: bottom center;
+}
+
+.card.active .info {
   text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 .card.active .number {
   color: #fff;
+}
+
+@media (max-width: 800px) {
+  .top-nav {
+    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2));
+  }
+
+  .top-nav a:nth-child(1) {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .card {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
