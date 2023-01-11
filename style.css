@@ -82,6 +82,7 @@ body {
 .card.active {
   background-size: cover;
   background-position: bottom center;
+  text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 .card.active .number {
