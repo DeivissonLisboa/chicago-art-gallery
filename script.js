@@ -28,7 +28,12 @@ fetch("https://api.artic.edu/api/v1/artworks")
   .then((response) => response.json())
   .then(({ data }) => {
     for (let i = 0; i < 4; i++) {
-      const { id, title, date_end } = data[i]
+      let { id, title, date_end } = data[i]
+
+      if (title.length > 80) {
+        title = title.split("").splice(0, 80).join("") + " ..."
+      }
+
       const card = document.createElement("div")
       card.classList.add("card")
       card.innerHTML = `
