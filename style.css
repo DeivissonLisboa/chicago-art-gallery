@@ -34,3 +34,40 @@ body {
   text-decoration: none;
   color: #000;
 }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  height: 100vh;
+  padding: 10rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.card .title {
+  font-size: 2.5rem;
+}
+
+.card .date {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.card .number {
+  text-align: center;
+  font-size: 15rem;
+}
+
+.card.active {
+  background-image: url("https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+  background-size: cover;
+  background-position: bottom center;
+  color: #fff;
+}
